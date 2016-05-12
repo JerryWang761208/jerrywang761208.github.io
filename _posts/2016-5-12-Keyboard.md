@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Swift] Keyboard Slide up and down smartly
+title: 'Swift' Keyboard Slide up and down smartly
 ---
 
 I'd love to introduce this brilliant code!
