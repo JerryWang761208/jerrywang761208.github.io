@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard
+title: Keyboards
 ---
 
 I'd love to introduce this brilliant code!
