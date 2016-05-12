@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard test
+title: Keyboard
 ---
 
 I'd love to introduce this brilliant code!
