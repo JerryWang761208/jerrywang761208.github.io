@@ -4,12 +4,18 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+My name is Jerry Wang.
 
-### More Information
+Now I am a web and ios developer in Taiwan.
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm interesting in php, mysql, javascript, swift.
+
+### Education
+
+1. Master: Mathematic, National Taiwan University.
+
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[c1495616@gmail.com](mailto:c1495616@gmail.com)
