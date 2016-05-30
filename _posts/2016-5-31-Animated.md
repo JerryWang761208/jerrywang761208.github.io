@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  images fade in and fade out
+title: Animated
 ---
 
 put this before viewDidLoad
