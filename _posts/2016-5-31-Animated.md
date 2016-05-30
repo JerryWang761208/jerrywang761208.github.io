@@ -1,0 +1,84 @@
+---
+layout: post
+title:  images fade in and fade out
+---
+
+put this before viewDidLoad
+ 
+````swift
+let images = [
+        UIImage(named: "bg_0"),
+        UIImage(named: "bg_1"),
+        UIImage(named: "bg_2")
+    ]
+    
+    //for image slide
+    var index1 = 0
+    var index2 = 1
+    //nav
+    
+	var imageView1 : UIImageView = UIImageView()
+    var imageView2 : UIImageView = UIImageView()
+    
+````
+
+
+then put this in viewDidLoad()
+
+````swift
+ let screenSize: CGRect = UIScreen.mainScreen().bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+
+        
+        //background image animation
+        imageView1.frame = CGRectMake(0, 0, screenWidth, screenHeight)
+        imageView2.frame = CGRectMake(0, 0, screenWidth, screenHeight)
+        imageView1.alpha = 1
+        imageView2.alpha = 0
+        imageView1.contentMode = UIViewContentMode.ScaleAspectFill
+        imageView2.contentMode = UIViewContentMode.ScaleAspectFill
+        imageView1.image = images[0]
+        imageView2.image = images[1]
+        self.view.addSubview(imageView1)
+        self.view.addSubview(imageView2)
+        
+        animateImageView1()
+        animateImageView2()
+
+````
+
+The last step, add these two functions
+
+````swift
+func animateImageView1(){
+       
+        UIView.animateWithDuration(3, delay:0, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
+            self.imageView1.alpha = 0
+            }, completion: {
+                (Completed : Bool) -> Void in
+                self.index1 += 1
+                self.index1 = self.index1 % self.images.count
+                self.imageView1.image = self.images[self.index1]
+                self.imageView1.alpha = 1
+                self.animateImageView1()
+                
+        })
+    }
+    
+    func animateImageView2(){
+       
+        UIView.animateWithDuration(3, delay:0, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
+            self.imageView2.alpha = 1
+            }, completion: {
+                (Completed : Bool) -> Void in
+                self.index2 += 1
+                self.index2 = self.index2 % self.images.count
+                self.imageView2.image = self.images[self.index2]
+                self.imageView2.alpha = 0
+                self.animateImageView2()
+                
+        })
+    }
+````
+
