@@ -13,21 +13,21 @@ img_path: 'http://www.jack003.com/static/img/blog'
 
 # author
 author:
-  name: 'Jack'
-  first_name: 'Jia'
-  last_name: 'Kun'
-  email: 'me@jack003.com'
-  facebook_username: 'jiakunnj'
-  github_username: 'Jack614'
+  name: 'Jerry'
+  first_name: 'Jerry'
+  last_name: 'Wang'
+  email: 'c1495616@gmail.com'
+  facebook_username: 'math761208'
+  github_username: 'jerrywang761208'
   head_img: 'static/img/landing/jerry.jpeg'
 
 # social link
 jingyu:
-  first_name: 'Yu'
-  last_name: 'Jing'
-  description: 'Painter.'
-  link: 'http://angular.jack003.com'
-  email: '805963294@qq.com'
+  first_name: 'Jerry'
+  last_name: 'Wang'
+  description: 'Developer'
+  link: 'jerrywang761208.github.io'
+  email: 'c1495616@gmail.com'
 
 # landing page
 landing:
